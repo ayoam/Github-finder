@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Github finder</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/ebde7b45ee.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+        <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/220px-Octicons-mark-github.svg.png" type="image/gif" sizes="16x16">
+    </head>
+    <body>
+        <!--Nav bar -->
+       <div id="navbar"><a href="index.html">
+          <span><i class="fab fa-github"></i></span>
+          Github finder </a>
+        </div>
+        
+        <!-- error-->
+        <div id="error">User not found</div>
+        <!-- search -->
+       <div id="search-container">
+           <h2>Search Github Users</h2>
+           <p>Enter a username to fetch a users profile info and repos</p>
+           <input type="text" id="user-input" placeholder="Github Username...">
+       </div>
+
+       <!-- profile -->
+       <div id="profile-infos">
+           <div id="profile-photo">
+               <div id="image"><img></div>
+               <a><button id="view-btn">View Profile</button></a>
+           </div>
+           <div id="infos">
+               <div id="cards">
+                       <li style="background-color: green;">Public Repos: <span id="public-repos">0</span></li>
+                       <li style="background-color: rgb(255, 97, 97);">Public Gists: <span id="public-gists">0</span></li>
+                       <li style="background-color: rgb(8, 206, 255);">followers: <span id="followers">0</span></li>
+                       <li style="background-color: rgb(119, 0, 255);">following: <span id="following">0</span></li>
+               </div>
+               <div id="table">
+                        <li class="tab" id="fth">Company: <span id="company"></span></li>
+                        <li class="tab">Website/blog: <span id="website"></span></li>
+                        <li class="tab">Location: <span id="location"></span></li>
+                        <li class="tab">Member since: <span id="m-since"></span></li>
+               </div>
+           </div>
+       </div>
+
+       <!-- repos -->
+       <h2 class="latest-repos">Repositories</h2>
+       <div id="all-repos">
+       <div class="repos-container">
+           <p id="repos">null</p>
+           <ul>
+              <li>Stars: <span>0</span></li>
+              <li>Watchers: <span>0</span></li>
+              <li>Forks: <span>0</span></li>
+           </ul>
+       </div>
+    </div>
+ 
+       <!-- footer -->
+        <div id="footer"> Github Finder ©</div>
+
+
+       <script src="app.js"></script>
+    </body>
+</html>
